@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="KGk-i7-Jjw" customClass="SettingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="57.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fex-Ad-f3I">
+                        <rect key="frame" x="0.0" y="0.0" width="439" height="55.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkw-Ta-no2">
+                                <rect key="frame" x="20" y="17.5" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sE7-df-6ql"/>
+                                    <constraint firstAttribute="width" constant="100" id="udw-TG-bKL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="WsQ-Wc-KSB">
+                                <rect key="frame" x="395" y="16" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Jg9-bu-hBZ"/>
+                                    <constraint firstAttribute="height" constant="24" id="NZP-dG-pZg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WsQ-Wc-KSB" secondAttribute="trailing" constant="20" id="5Dl-CL-zWb"/>
+                            <constraint firstItem="Tkw-Ta-no2" firstAttribute="centerY" secondItem="Fex-Ad-f3I" secondAttribute="centerY" id="EvS-hP-SNK"/>
+                            <constraint firstItem="WsQ-Wc-KSB" firstAttribute="centerY" secondItem="Tkw-Ta-no2" secondAttribute="centerY" id="H2g-UV-SbB"/>
+                            <constraint firstItem="Tkw-Ta-no2" firstAttribute="leading" secondItem="Fex-Ad-f3I" secondAttribute="leading" constant="20" id="g1N-C7-7OL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Fex-Ad-f3I" secondAttribute="trailing" id="9er-w6-edG"/>
+                    <constraint firstItem="Fex-Ad-f3I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GuH-aI-y07"/>
+                    <constraint firstAttribute="bottom" secondItem="Fex-Ad-f3I" secondAttribute="bottom" constant="2" id="Tsh-pN-Ccm"/>
+                    <constraint firstItem="Fex-Ad-f3I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Wtb-SE-QX1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="leftLabel" destination="Tkw-Ta-no2" id="sXq-Lg-EMk"/>
+            </connections>
+            <point key="canvasLocation" x="232.80000000000001" y="152.02398800599701"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jiantou" width="64" height="64"/>
+    </resources>
+</document>

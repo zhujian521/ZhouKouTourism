@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InformationView">
+            <rect key="frame" x="0.0" y="0.0" width="528" height="113"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="河南省周口市淮阳县" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dai-TX-Bpt">
+                    <rect key="frame" x="10" y="60" width="508" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="BrE-e0-f63"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开放时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNj-LR-zvH">
+                    <rect key="frame" x="10" y="34" width="508" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="DEQ-is-T0K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40元/人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUV-7C-9GA">
+                    <rect key="frame" x="10" y="8" width="508" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="FMo-AJ-vPB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.25232297580000002" blue="0.28307116669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqO-JD-wCr">
+                    <rect key="frame" x="428" y="8" width="90" height="30"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="68U-uC-wzk"/>
+                        <constraint firstAttribute="height" constant="30" id="EcO-nP-U4o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="已收藏">
+                        <color key="titleColor" red="0.016966950462015684" green="0.5772836593696028" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WUV-7C-9GA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="0cU-vO-vdz"/>
+                <constraint firstItem="WUV-7C-9GA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="RlB-Lx-314"/>
+                <constraint firstItem="dai-TX-Bpt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="WAz-vA-SiV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qNj-LR-zvH" secondAttribute="trailing" constant="10" id="Wkt-wc-1YO"/>
+                <constraint firstItem="qNj-LR-zvH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="d9O-AB-al0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gqO-JD-wCr" secondAttribute="trailing" constant="10" id="etl-Wy-83Q"/>
+                <constraint firstItem="dai-TX-Bpt" firstAttribute="top" secondItem="qNj-LR-zvH" secondAttribute="bottom" constant="5" id="fWu-KB-4Ul"/>
+                <constraint firstItem="qNj-LR-zvH" firstAttribute="top" secondItem="WUV-7C-9GA" secondAttribute="bottom" constant="5" id="lHO-GT-dpK"/>
+                <constraint firstItem="gqO-JD-wCr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="m5x-d3-Kbb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dai-TX-Bpt" secondAttribute="trailing" constant="10" id="wXo-kl-5cB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WUV-7C-9GA" secondAttribute="trailing" constant="10" id="yO7-2y-mYW"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="addressLabel" destination="dai-TX-Bpt" id="QCa-qK-ezi"/>
+                <outlet property="collectionButton" destination="gqO-JD-wCr" id="mEp-re-haN"/>
+                <outlet property="priceLabel" destination="WUV-7C-9GA" id="DLL-HK-leN"/>
+                <outlet property="timeAttention" destination="qNj-LR-zvH" id="KRR-b9-Hvs"/>
+            </connections>
+            <point key="canvasLocation" x="328" y="307.1964017991005"/>
+        </view>
+    </objects>
+</document>

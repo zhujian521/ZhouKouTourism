@@ -1,0 +1,42 @@
+PODS:
+  - AVOSCloud (11.4.9)
+  - IQKeyboardManager (6.2.0)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.15.7)
+  - SDAutoLayout (2.2.1)
+  - SDWebImage (5.0.0-beta3):
+    - SDWebImage/Core (= 5.0.0-beta3)
+  - SDWebImage/Core (5.0.0-beta3)
+
+DEPENDENCIES:
+  - AVOSCloud (~> 11.4.9)
+  - IQKeyboardManager (~> 6.2.0)
+  - MBProgressHUD (~> 1.1.0)
+  - MJExtension (~> 3.0.13)
+  - MJRefresh (~> 3.1.15.3)
+  - SDAutoLayout (~> 2.2.0)
+  - SDWebImage (~> 5.0.0-beta3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AVOSCloud
+    - IQKeyboardManager
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - SDAutoLayout
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  AVOSCloud: 1ad969db6e24c41ae1788d68698255d853883069
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
+  SDWebImage: e52654ceef9fdc19f4c612d64a5b6d3f05dd81a4
+
+PODFILE CHECKSUM: 16ace61a006c9649e23d85fa8aa17f5f8618cc87
+
+COCOAPODS: 1.5.3

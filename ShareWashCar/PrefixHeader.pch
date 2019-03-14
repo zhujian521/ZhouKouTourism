@@ -1,0 +1,92 @@
+//
+//  PrefixHeader.pch
+//  ShareWashCar
+//
+//  Created by 朱健 on 2019/2/17.
+//  Copyright © 2019 朱健. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "NSString+ZCVaild.h"
+#import "NSString+ZCExtension.h"
+#import "UIButton+Extension.h"
+#import "UIButton+VerifyCode.h"
+#import "UIImage+Color.h"
+#import "UIView+ZCFrame.h"
+#import "LoginViewController.h"
+
+#import <SDAutoLayout.h>
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <MBProgressHUD.h>
+#import <UIImageView+WebCache.h>
+/// iOS 9前的框架
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
+/// iOS 9的新框架
+#import <ContactsUI/ContactsUI.h>
+
+#import <AVOSCloud/AVOSCloud.h>
+#import "UILabel+Attribute.h"
+#import "HUDManager.h"
+#import "CALayer+Color.h"
+
+#define UIColorFromRGB(rgbValue) [UIColor \colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+//RGB
+#define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+/* 屏幕宽/高 */
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define kRealValue(with)((with)*(kScreenW/320))
+#define kRealValueHeight(with)((with)*(kScreenH/568))
+#define MainColor [UIColor colorWithRed:(239)/255.0 green:(128)/255.0 blue:(24)/255.0 alpha:0.7]
+
+//判断字符串是否为空
+#define NULLString(string) ((![string isKindOfClass:[NSString class]])||[string isEqualToString:@""] || (string == nil) || [string isEqualToString:@""] || [string isKindOfClass:[NSNull class]]||[[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0)
+#define SHOW_ALERT(_msg_)  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:_msg_ delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];\
+[alert show];
+#define NavigationBar_HEIGHT 64
+
+#define kFont10WithHelveticaNeu kFontWithHelveticaNeu(10.0)
+#define kFont11WithHelveticaNeu kFontWithHelveticaNeu(11.0)
+#define kFont12WithHelveticaNeu kFontWithHelveticaNeu(12.0)
+#define kFont13WithHelveticaNeu kFontWithHelveticaNeu(13.0)
+#define kFont14WithHelveticaNeu kFontWithHelveticaNeu(14.0)
+#define kFont15WithHelveticaNeu kFontWithHelveticaNeu(15.0)
+#define kFont16WithHelveticaNeu kFontWithHelveticaNeu(16.0)
+#define kFont17WithHelveticaNeu kFontWithHelveticaNeu(17.0)
+#define kFont18WithHelveticaNeu kFontWithHelveticaNeu(18.0)
+#define kFont19WithHelveticaNeu kFontWithHelveticaNeu(19.0)
+#define kFont20WithHelveticaNeu kFontWithHelveticaNeu(20.0)
+#define kFontWithHelveticaNeu(x) [UIFont fontWithName:@"ArialMT" size:(x)]
+
+#define kBoldFont10WithHelveticaNeu kBoldFontWithHelveticaNeu(10.0)
+#define kBoldFont11WithHelveticaNeu kBoldFontWithHelveticaNeu(11.0)
+#define kBoldFont12WithHelveticaNeu kBoldFontWithHelveticaNeu(12.0)
+#define kBoldFont13WithHelveticaNeu kBoldFontWithHelveticaNeu(13.0)
+#define kBoldFont14WithHelveticaNeu kBoldFontWithHelveticaNeu(14.0)
+#define kBoldFont15WithHelveticaNeu kBoldFontWithHelveticaNeu(15.0)
+#define kBoldFont16WithHelveticaNeu kBoldFontWithHelveticaNeu(16.0)
+#define kBoldFont17WithHelveticaNeu kBoldFontWithHelveticaNeu(17.0)
+#define kBoldFont18WithHelveticaNeu kBoldFontWithHelveticaNeu(18.0)
+#define kBoldFont19WithHelveticaNeu kBoldFontWithHelveticaNeu(19.0)
+#define kBoldFont20WithHelveticaNeu kBoldFontWithHelveticaNeu(20.0)
+#define kBoldFontWithHelveticaNeu(x) [UIFont fontWithName:@"Arial-BoldMT" size:(x)]
+
+#define kTextBorderColor     RGBCOLOR(227,224,216)
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+
+#define kUserDefaults [NSUserDefaults standardUserDefaults]
+// 状态栏和导航栏总高度
+#define kNavBarHAbove7 (CGFloat)(YYISiPhoneX?(88):(64))
+// TabBar高度
+#define kTabBarHeight (CGFloat)(YYISiPhoneX?(49+34):(49))
+
+#define YYISiPhoneX [[UIScreen mainScreen] bounds].size.width >=375.0f && [[UIScreen mainScreen] bounds].size.height >=812.0f&& YYIS_IPHONE
+
+#define YYIS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+// 底部安全区域远离高度
+#define kBottomSafeHeight   (CGFloat)(YYISiPhoneX?(34):(0))
+#endif /* PrefixHeader_pch */
