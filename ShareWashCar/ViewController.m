@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+//    添加按钮
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(10, 10, 40, 40)];
+    [self.view addSubview:btn];
+    btn.backgroundColor = [UIColor redColor];
 }
 
 
